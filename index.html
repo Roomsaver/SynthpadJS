@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <script src="jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <div id="settings">
+            <div id="switcher-control-wrapper">
+                <div id="switcher-control-labels">
+                    <label for="switcher-control">MIDI/Audio</label>
+                    <label for="reset-audio">Reset audio?</label>
+                </div>
+                <div id="switcher-control-inputs">
+                    <input id="midi-audio-switcher" name="switcher-control" type="checkbox">
+                    <div class="slider round"></div>
+                    <input id="reset-audio" checked name="reset-audio" type="checkbox">
+                    <div class="slider round"></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div id="controller">
+            <div id="button-grid">
+                <div class="button-row">
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                </div>
+                <div class="button-row">
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                </div>
+                <div class="button-row">
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                </div>
+                <div class="button-row">
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                    <button class="player-button"></button>
+                </div>
+            </div>
+            <div id="audio" style="display:none;">
+            </div>
+            <div id="upload" style="display:none;">
+            </div>
+            <div class="hidden" id="picker-menu">
+                <button class="picker-menu-button" id="upload-button">Choose Sample</button>
+                <button class="picker-menu-button" id="map-key">Map to Key</button>
+            </div>
+            <p id="display-text" class="hidden;"></p>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
